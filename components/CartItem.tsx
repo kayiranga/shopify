@@ -59,7 +59,7 @@ export function CartItem({ item }: CartItemProps) {
               />
             ) : (
               <div className="w-full h-full flex items-center justify-center text-xs text-muted-foreground">
-                No Image
+                No Image Found
               </div>
             )}
           </div>
