@@ -22,6 +22,8 @@ export async function addToCart(productId: string, quantity: number = 1) {
 
     const existingCart = await cartRepository.findByUserId(userId);
     const items = existingCart?.items || [];
+
+    console.log("hello");
     
     const existingItemIndex = items.findIndex(
       item => item.productId.toString() === productId
